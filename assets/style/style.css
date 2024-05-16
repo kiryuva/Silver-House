@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/****************************/
+.header__content{ 
+    padding-top: 0 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.header_nav-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    transition: .5s;
+    }
+
+.header__nav-list-link {
+    color: #8C8A8A;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .5s;
+}
+.header__nav-list-link:hover{
+    color: #4581B7;
+}
+
+.main__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.main__content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.main__content-block1 {
+    max-width: 730px;
+    max-height: 500px;
+    background: var(--grey, #F0F0F0);
+}
+
+.main__content-block1 h2,
+.main__content-block2 h2 {
+    color: #4581B7;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.main__content-block1 p {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-left: 40px;
+    padding-right: 95px;
+    transform: .7s;
+    overflow: hidden;
+}
+
+.main__content-block2 {
+    max-width: 350px;
+    max-height: 500px;
+    background: var(--grey, #F0F0F0);
+}
+
+.main__content-block2 p {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-right: 40px;
+    padding-left: 24px;
+    padding-bottom: 25px;
+    transform: .7s;
+    overflow: hidden;
+}
+
+.main__content-block2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contacts {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-left: 24px;
+    transform: .7s;
+}
+
+.footer {
+    width: 100%;
+    background: var(--grey, #F0F0F0);
+}
+
+.footer__info {
+    margin: 0 auto;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__icon {
+    max-width: 254px;
+    max-height: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__items p {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    transform: .7s;
+}
+
+.footer__items a {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    transform: .7s;
+    
+}
+/***----------------button-burger-----------***/
+/*------------------------------------------***/
+.nav__menu-btn {
+    width: 50px;
+    height: 50px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav__menu-btn-line{
+    width: 100%;
+    height: 2px;
+    background-color:   #fff;
+    position: relative;
+}
+.nav__menu-btn:hover .nav__menu-btn-line{
+    background-color: transparent;
+}
+.nav__menu-btn-line::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:  #fff;
+    position: absolute;
+    top: -10px; 
+    /* transition: .5s;
+    transform: rotate(45deg); */
+    }
+    .nav__menu-btn-line::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;  
+        /* transition: .5s;
+        transform: rotate(-45deg); */
+    }
+    .nav__menu-btn:hover .nav__menu-btn-line::before{
+        top: 0;
+        transform: rotate(45deg);
+        transition: .5s
+    }
+    .nav__menu-btn:hover .nav__menu-btn-line::after{
+        top: 0;
+        transform: rotate(-45deg);
+        transition: .5s
+    }
+    /**************/
+    .nav__menu{
+        display: flex;
+        align-items: center;
+    }
+    /**********button burger css */
